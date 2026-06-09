@@ -23,8 +23,6 @@ RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir --upgrade -r requirements.txt
 
 
-RUN pip install --no-cache-dir git+https://github.com/pytgcalls/pytgcalls.git@dev
-
 COPY --chown=user . /app
 
 CMD ["python3", "main.py"]
